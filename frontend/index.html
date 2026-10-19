@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Добросмена — помощь близкому человеку дома</title>
+<meta name="description" content="Добросмена — сервис организации помощи близкому человеку дома: подбор исполнителя, план ухода, смены, команда и поддержка.">
+<link rel="stylesheet" href="static/app.css">
+</head>
+<body>
+<div class="top"><div class="public-wrap"><span>Помощь близкому человеку дома</span><span>При непосредственной угрозе жизни — 112 или 103</span></div></div>
+<header class="public-header" id="publicHeader">
+  <div class="public-nav public-wrap">
+    <a class="brand" href="#home" onclick="goHome(event)"><span class="brand-mark">Д</span><span>Добросмена</span></a>
+    <nav class="public-links" id="publicLinks">
+      <a href="#how">Как это работает</a><a href="#care">План ухода</a><a href="#specialists">Специалисты</a><a href="#safety">Безопасность</a>
+    </nav>
+    <div class="public-actions">
+      <button class="access-button" onclick="toggleAccessibility()" aria-label="Настройки доступности">Для слабовидящих</button>
+      <button class="login-button" onclick="openAuth('login')">Войти</button>
+    </div>
+    <button class="mobile-menu" onclick="togglePublicMenu()" aria-label="Открыть меню">☰</button>
+  </div>
+</header>
+
+<main id="app"></main>
+<div id="modal"></div><div id="toast"></div>
+<script src="static/app.js"></script>
+</body>
+</html>
